@@ -1,12 +1,12 @@
 const { CommandoClient, SQLiteProvider } = require('discord.js-commando');
 const path = require('path');
-const { token, isDev } = require('./settings/config.json');
+const { token, isDev, inviteUrl } = require('./settings/config.json');
 const db = require('./settings/database');
 
 const client = new CommandoClient({
 	commandPrefix: '!',
 	owner: '587476530230460416',
-    invite: 'https://discord.com/api/oauth2/authorize?client_id=770231370244161556&permissions=2147483591&scope=bot',
+    invite: inviteUrl,
     unknownCommandResponse: isDev
 });
 

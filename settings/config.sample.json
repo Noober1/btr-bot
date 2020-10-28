@@ -1,0 +1,6 @@
+{
+    "isDev": false,
+    "database": "DATABASE",
+    "token" : "DISCORD_BOT_TOKEN",
+    "inviteUrl":"INVITE_URL"
+}
