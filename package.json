@@ -1,0 +1,27 @@
+{
+  "name": "btr-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": []
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "discord.js": "^12.4.1",
+    "discord.js-commando": "discordjs/Commando",
+    "path": "^0.12.7",
+    "sqlite": "^4.0.15",
+    "sqlite3": "^5.0.0"
+  }
+}
