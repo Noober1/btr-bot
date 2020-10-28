@@ -1,11 +1,11 @@
 const { CommandoClient, SQLiteProvider } = require('discord.js-commando');
 const path = require('path');
-const { token, isDev, inviteUrl } = require('./settings/config.json');
+const { token, isDev, inviteUrl, ownerID } = require('./settings/config.json');
 const db = require('./settings/database');
 
 const client = new CommandoClient({
 	commandPrefix: '!',
-	owner: '587476530230460416',
+	owner: ownerID,
     invite: inviteUrl,
     unknownCommandResponse: isDev
 });
@@ -24,7 +24,7 @@ client.registry
 ])
 .registerDefaultGroups()    
 .registerDefaultCommands({
-    help: false,
+    help: isDev,
     ping: false,
     eval: isDev
 })
